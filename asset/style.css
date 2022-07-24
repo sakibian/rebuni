@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 * {
@@ -9,8 +8,7 @@
 }
 
 body {
-    font-family: 'Merriweather', serif;
-    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
 }
 
 nav {
@@ -19,7 +17,7 @@ nav {
     border-bottom: 0.1rem solid #dfe3ee;
 }
 
-ul {
+nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr;
     grid-template-rows: 10% 40% 10%;
@@ -48,11 +46,11 @@ li a {
     text-transform: uppercase;
     letter-spacing: 0.6rem;
 }
-ul li:last-child {
+nav ul li:last-child {
     padding-top: 1.6rem;
 }
 
-ul li:last-child i {  
+nav ul li:last-child i {  
     padding-top: 1.6rem;
     background-color: black;
     color: #dfe3ee;
@@ -97,9 +95,9 @@ ul li:last-child i {
     margin-right: 0.2rem;
 }
 
-.content p {
+.content p.title {
     font-size: 5rem;
-    font-weight: 600;
+    font-weight: 900;
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
@@ -112,14 +110,14 @@ ul li:last-child i {
     margin-top: 14rem;
 }
 
-.article span, p {
+.article span {
+    color: #004000;
     padding: 1rem;
 }
 
-.article span {
-    color: #004000;
+.article p {
+    padding: 1rem;
 }
-
 .article p.h3 {
     font-family: 'Roboto', sans-serif;
     color: #000;
@@ -129,5 +127,32 @@ ul li:last-child i {
 .article p {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    color: #848484;
+}
+
+.content ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.footer {
+    width: 100%;
+    height: 3rem;
+    color: #848484;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 0.1rem solid #dfe3ee;
+    letter-spacing: 0.1rem;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:active, a:visited {
+    color: #333;
+}
+.footer a:hover {
     color: #848484;
 }
